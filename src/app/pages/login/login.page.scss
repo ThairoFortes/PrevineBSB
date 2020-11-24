@@ -1,0 +1,20 @@
+ion-header{
+    ion-toolbar{
+      --min-height: 100px; //aumenta altura
+      ion-title{
+        align-items: flex-end;
+        img{
+          width: 100px; //largura
+          vertical-align: middle; //alinhamento vertical
+          margin-left: 10px; //distancia da esquerda
+        }
+  
+        span{
+          font-size: 20px; //tamanho da fonte
+        }
+
+        
+  
+      }
+    }
+  }

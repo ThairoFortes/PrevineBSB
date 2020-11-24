@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "previnebsb": {
+      "hosting": {
+        "app": [
+          "previnebsb"
+        ]
+      }
+    },
+    "previnebsb-faebd": {
+      "hosting": {
+        "app": [
+          "previnebsb-faebd"
+        ]
+      }
+    }
+  }
+}

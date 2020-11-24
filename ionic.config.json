@@ -1,0 +1,7 @@
+{
+  "name": "PrevineBSB",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

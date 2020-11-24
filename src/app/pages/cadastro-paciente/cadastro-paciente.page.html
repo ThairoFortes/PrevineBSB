@@ -1,0 +1,97 @@
+<ion-header> <!-- para tirar linha: <ion-header class= "ion-no-border"> -->
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      <span>PrevineBSB</span>
+      <img src="/assets/logo.png">   
+    </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nome Completo</ion-label>
+      <ion-input type="text" [(ngModel)]="cadpaciente.name" placeholder="Ex: Maria da Silva Sousa" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input type="number" [(ngModel)]="cadpaciente.cpf" placeholder="Ex: 000.000.00-00" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cartão SUS</ion-label>
+      <ion-input type="number" [(ngModel)]="cadpaciente.cartao" placeholder="Ex: 01235" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Gênero</ion-label>
+      <ion-input type="text" [(ngModel)]="cadpaciente.genero" placeholder="Ex: Feminino" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cor</ion-label>
+      <ion-input type="text" [(ngModel)]="cadpaciente.cor" placeholder="Ex: Branca" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input type="email" [(ngModel)]="cadpaciente.email" placeholder="Ex: maria.sousa@gmail.com" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">CEP</ion-label>
+      <ion-input type="number" [(ngModel)]="cadpaciente.cep" placeholder="Ex: 70000-000" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Endereço</ion-label>
+      <ion-input type="text" [(ngModel)]="cadpaciente.endereco" placeholder="Ex: Qd 0 Cj A Cs 0" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Complemento</ion-label>
+      <ion-input type="text" [(ngModel)]="cadpaciente.complemento" placeholder="Ex: Condomínio" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Bairro</ion-label>
+      <ion-input type="text" [(ngModel)]="cadpaciente.bairro" placeholder="Ex: Sobradinho" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cidade</ion-label>
+      <ion-input type="text" [(ngModel)]="cadpaciente.cidade" placeholder="Ex: Brasília" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">UF</ion-label>
+      <ion-input type="text" [(ngModel)]="cadpaciente.uf" placeholder="Ex: DF" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Celular</ion-label>
+      <ion-input type="number" [(ngModel)]="cadpaciente.celular" placeholder="Ex: (61) 9 9999-9999" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input type="number" [(ngModel)]="cadpaciente.telefone" placeholder="Ex: (61) 3333-3333" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Dia da Semana</ion-label>
+      <ion-input type="text" [(ngModel)]="cadpaciente.diasemana" placeholder="Ex: Segunda" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Período</ion-label>
+      <ion-input type="text" [(ngModel)]="cadpaciente.periodo" placeholder="Ex: Manhã" required></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button color="light" routerLink="/home" expand="block">Voltar</ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button color="light" (click)="saveCadpaciente()" routerLink="/home" expand="block">Salvar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

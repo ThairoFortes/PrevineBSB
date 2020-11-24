@@ -1,0 +1,43 @@
+<ion-header class= "ion-no-border"> <!-- para tirar linha: <ion-header class= "ion-no-border"> -->
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      <span>PrevineBSB</span>
+      <img src="/assets/logo.png">   
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+  
+    <ion-item color="primary" lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" #email required></ion-input>
+    </ion-item>
+    <ion-item color="primary" lines="full">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="light" (click)="onLogin(email, password)" expand="block">Login</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col> 
+        <ion-button type="submit" color="light" expand="block" routerLink="/forgot-password">Esqueci minha senha</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col> 
+        <ion-button type="submit" color="light" expand="block" routerLink="/register">Cadastrar novo</ion-button>
+      </ion-col>
+    </ion-row>
+    <span class="center-span"><center> ou </center></span>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" (click)="onLoginGoogle()" expand="block">Login com Google
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+</ion-content>

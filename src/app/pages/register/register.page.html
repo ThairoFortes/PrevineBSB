@@ -1,0 +1,39 @@
+<ion-header> <!-- para tirar linha: <ion-header class= "ion-no-border"> -->
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      <span>PrevineBSB</span>
+      <img src="/assets/logosus.png">   
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+  <h1>Cadastrar Novo</h1>
+  <form>
+    
+    <ion-item color="primary">
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input type="email" #email required></ion-input>
+    </ion-item>
+
+    <ion-item color="primary">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color = "light" type="submit" (click)="onRegister(email, password)" expand="block">Cadastrar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+  <ion-row>
+    <ion-col> 
+      <ion-button type="submit" color="light" (click)="onLogin(email)" expand="block" routerLink="/login">Já possuo conta</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+
+
+
